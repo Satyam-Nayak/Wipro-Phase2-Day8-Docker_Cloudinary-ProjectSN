@@ -8,8 +8,8 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
+
 
     @Column(unique = true)
     private String skuCode;
@@ -19,6 +19,7 @@ public class Product {
     private Double quantity;
     //    get it from cloudinary
     private String imageUrl;
+
 
     public Product() {
     }
