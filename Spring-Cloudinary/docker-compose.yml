@@ -2,14 +2,14 @@ version: '3.8'
 
 services:
   app:
-    image:
+    image: satyamn120/springbootaplication
     build:
       context: .
       dockerfile: Dockerfile
     ports:
       - "8888:8888"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/docker_cloudinary_wipro
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/docker_cloudinary_wipro
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: SatyamN.26.
     depends_on:
